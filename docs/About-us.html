@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>parts of car</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+    <div class="page">
+        <header class="header">
+            <img src="../imgs/TOYOTA.jpg" alt="">
+            <div class="navgation">
+                <nav>
+                    <!-- tags to transport from one page to another -->
+                    <!-- tags to transport from one page to another -->
+                    <a href="../index.html">Home</a>
+                    <a href="../docs/contact.html">contact-us</a>
+                    <a href="../docs/about-us.html">about</a>
+                </nav>
+            </div>
+            <!-- tags for the sentences to be easy for edit-->
+        </header>
+    
+        <form id="data-form">
+            <input type="text" id="make"  name="make" placeholder="Make" required >
+            <input type="text" id="model"  name="model" placeholder="Model" required >
+            <input type="number" id="year" name="year" placeholder="Year" required>
+            <input type="number" id="price" name="price" placeholder="Price" required>
+            <input type="submit"></input>
+        </form>
+        <table id="data-table">
+                <tr>
+                    <th>make</th>
+                    <th>model</th>
+                    <th>year</th>
+                    <th>price</th>
+                </tr>
+        </table>
+    </div>
+    <footer id="footer">
+        <div class="footerContainer">
+            <div class="socialIcons">
+                <a href="https://www.facebook.com/TOYOTA"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/TOYOTA"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.twitter.com/TOYOTA"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+            <div class="footerNav">
+                <ul>
+                    <li> <a href="../index.html">Home</a></li>
+                    <li> <a href="../docs/contact.html">Contact-us</a></li>
+                    <li> <a href="../docs/about-us.html">about</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footerbottom">
+            <p>Designed by <span class="designer">Alhussein Mohammed</span>
+            </p>
+        </div>
+    </footer>
+<script>document.getElementById("data-form").addEventListener('submit',function (event){
+    event.preventDefault();
+    
+    const make = document.getElementById('make').value;
+    const model = document.getElementById('model').value;
+    const year = document.getElementById('year').value;
+    const price = document.getElementById('price').value;
+
+    const newrow = document.createElement('tr');
+
+    const makecell =document.createElement('td');
+    const modelcell =document.createElement('td');
+    const yearcell=document.createElement('td');
+    const pricecell=document.createElement('td');
+
+
+    makecell.textContent = make;
+    modelcell.textContent = model;
+    yearcell.textContent = year;
+    pricecell.textContent = price;
+
+
+    newrow.appendchild(makecell);
+    newrow.appendchild(modelcell);
+    newrow.appendchild(yearcell);
+    newrow.appendchild(pricecell);
+
+    document.getElementById('data-table').appendChild(newrow);
+
+
+    document.getElementById(data-form).reset();
+
+});</script>
+</body>
+</html>
