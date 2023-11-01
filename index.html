@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>parts of car</title>
+    <link rel="stylesheet" href="css/index.css">
+    <!-- link for the wowslider to conect me to the website of it -->
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<!-- the page class is to be easy to control all the page by using css -->
+<body>
+    <div class="page">
+        <header class="header">
+            <img src="../imgs/TOYOTA.jpg" alt="">
+            <div class="navgation">
+                <nav>
+                    <!-- tags that help me to transport from one page to another -->
+                    <!-- tags that help me to transport from one page to another -->
+                    <a href="../index.html">Home</a>
+                    <a href="../docs/contact.html">contact-us</a>
+                    <a href="../docs/about-us.html">about</a>
+                </nav>
+            </div>
+            <!-- tags for the sentences to be easy for edit-->
+        </header>
+        <div class="one_p">
+            
+            <div class="fonts">
+                <h2>TOYOTA</h2>
+                <P id="toyota-desc"> We are not only ones <br>but we are the best
+            </div>
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="../imgs/2020-Toyota-Corolla-1.jpg" ></div>
+                <div class="swiper-slide"><img src="../imgs/HIL.jpg" ></div>
+                <div class="swiper-slide"><img src="../imgs/HLD2023.jpg" ></div>
+                <div class="swiper-slide"><img src="../imgs/RAV2020.jpg" ></div>
+                <div class="swiper-slide"><img src="../imgs/CAMRY2020.jpeg" ></div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+            <!-- classes for editing the photos that is in this page -->
+        </div>
+        <div class="imgs_section">
+            <div class="imgs1">
+                <img src="../imgs/partcar1.jpg" alt="">
+                <p>
+                    Everything your car needs available with us
+                </p>
+            </div>
+            <div class="imgs2">
+                <img src="../imgs/partcar2.jpg" alt="">
+                <p> Everything your car needs available with us
+                </p>
+            </div>
+            <div class="imgs3">
+                <img src="../imgs/partcar4.jpg" alt="">
+                <p>
+                    Everything your car needs available with us
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+    
+    <footer id="footer">
+        <div class="footerContainer">
+            <div class="socialIcons">
+                <a href="https://www.facebook.com/TOYOTA"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/TOYOTA"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.twitter.com/TOYOTA"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+            <div class="footerNav">
+                <ul>
+                    <li> <a href="../index.html">Home</a></li>
+                    <li> <a href="../docs/contact.html">Contact-us</a></li>
+                    <li> <a href="../docs/about-us.html">about</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footerbottom">
+            <p>Designed by <span class="designer">Alhussein Mohammed</span>
+            </p>
+        </div>
+    </footer>
+
+    <!-- scripts for the wowslider -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script>
+    const swiper = new Swiper('.swiper', {
+        autoplay:{
+            delay:3000,
+        disableOnInteraction:false,
+        },
+        loop: true,
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+            clickable:true,
+        },
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        });
+    </script>
+</body>
+</html>
